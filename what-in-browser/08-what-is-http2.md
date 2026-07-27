@@ -1,6 +1,6 @@
 ---
 title: Chrome 的秘密实验
-url: /what-is-http2.0
+url: /what-is-http2
 ---
 
 > 本文以拟人化故事回顾 `SPDY` 与 `HTTP/2` 的关键思路。服务器推送曾是 `HTTP/2` 的特性之一，但如今主流浏览器已停止支持；多路复用、二进制分帧和 `HPACK` 头部压缩仍是理解 `HTTP/2` 的重点。
