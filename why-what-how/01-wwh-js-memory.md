@@ -2,6 +2,7 @@
 title: JavaScript 变量与内存
 url: /wwh-js-memory
 ---
+
 ## 前言
 
 这次的 `why what or how` 主题：`JavaScript` 变量存储。
