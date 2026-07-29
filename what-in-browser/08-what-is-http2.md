@@ -1,6 +1,7 @@
 ---
 title: Chrome 的秘密实验
 url: /what-is-http2
+excerpt: 缓存、长连接、管道化轮番上阵，请求还是不够快。HTTP 和 TCP 决定偷偷开个新部门，结果实验一炮而红，连 Firefox 都找上门了……
 ---
 
 ## 还能更快！

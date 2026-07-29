@@ -1,6 +1,7 @@
 ---
 title: 闹心的变量
 url: /js-variable2
+excerpt: 数字、字符串、null、对象挤进同一个小盆，刚见面就吵翻了。加号一落下，到底相加还是拼接？JavaScript 老大的类型转换器开始冒烟……
 ---
 
 ## 前言

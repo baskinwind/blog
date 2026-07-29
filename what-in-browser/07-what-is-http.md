@@ -1,6 +1,7 @@
 ---
 title: HTTP 的手术室
 url: /what-is-http
+excerpt: 早上 6 点，浏览器早高峰准时开场。GET、POST、请求头、响应体挤进 HTTP 手术室，TCP 还时不时“duang”地砸来一个包——今天又是忙碌的一天。
 ---
 
 ## 来客

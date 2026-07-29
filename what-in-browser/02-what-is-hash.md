@@ -1,6 +1,7 @@
 ---
 title: URL hash 的委屈
 url: /what-is-hash
+excerpt: URL 都出发去服务器了，hash 却被浏览器一把拽了下来：“你不能去！”凭什么？更扎心的是，等了半天，却只被安排去找一个元素……
 ---
 
 ## 诞生
