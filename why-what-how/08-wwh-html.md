@@ -1,6 +1,7 @@
 ---
 title: 什么是 HTML？
 url: /wwh-html
+excerpt: HTML 是编程语言吗？浏览器访问 `.jsp`、`.php` 时，最后拿到的又是什么？从超文本与浏览器的诞生出发，重新看看 HTML 到底负责什么。
 ---
 
 ## 前言

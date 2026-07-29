@@ -1,6 +1,7 @@
 ---
 title: JavaScript 变量与内存
 url: /wwh-js-memory
+excerpt: “原始类型存在栈里，对象存在堆里”——背了这么多年的结论，真能解释闭包吗？先把口诀放到一边，顺着变量的生命周期重新看看 JavaScript 内存。
 ---
 
 ## 前言

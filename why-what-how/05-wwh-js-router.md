@@ -1,6 +1,7 @@
 ---
 title: 什么是前端路由？
 url: /wwh-js-router
+excerpt: 地址栏变了，页面为什么没有刷新？刷新一下，history 路由又为什么突然 404？Hash 和 History 的差别，不只是 URL 里有没有一个 `#`。
 ---
 
 ## 前言

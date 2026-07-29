@@ -1,6 +1,7 @@
 ---
 title: 如何理解 HTML5？
 url: /wwh-html5
+excerpt: HTML5 只是 HTML4 的升级版吗？语义化、通信、存储、DOM、BOM 甚至 CSS3 都被装进这个名字后，“H5”早已不只是一份标签规范。
 ---
 
 ## 前言

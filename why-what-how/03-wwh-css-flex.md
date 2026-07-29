@@ -1,6 +1,7 @@
 ---
 title: CSS Flex 布局
 url: /wwh-css-flex
+excerpt: Flex 只是个“居中神器”？主轴一换、内容一换行，熟悉的属性立刻开始打架。搞清容器行和空间分配，Flex 才算真正用明白。
 ---
 
 ## 前言

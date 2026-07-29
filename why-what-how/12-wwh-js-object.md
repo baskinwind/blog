@@ -1,6 +1,7 @@
 ---
 title: JavaScript 对象与原型
 url: /wwh-js-object
+excerpt: 对象从哪里找到自身没有的属性？`prototype`、`__proto__` 和 `constructor` 绕来绕去，究竟是谁指向谁？从一次取值开始，把原型链顺着内存关系拆开。
 ---
 
 ## 前言

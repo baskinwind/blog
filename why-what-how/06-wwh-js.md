@@ -1,6 +1,7 @@
 ---
 title: 什么是 JavaScript？
 url: /wwh-js
+excerpt: JavaScript 能操作页面，也能跑在服务器，甚至还能写桌面应用——这些能力到底属于语言，还是宿主环境？先把边界划清，再重新回答：什么是 JavaScript？
 ---
 
 ## 前言

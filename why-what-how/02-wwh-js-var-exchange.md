@@ -1,6 +1,7 @@
 ---
 title: JavaScript 类型转换
 url: /wwh-js-var-exchange
+excerpt: `[] == ![]` 为什么是 `true`？加号什么时候做加法，什么时候突然开始拼字符串？与其背下一串怪异结果，不如顺着 JavaScript 的转换规则一步步算清楚。
 ---
 
 ## 前言

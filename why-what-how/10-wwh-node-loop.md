@@ -1,6 +1,7 @@
 ---
 title: Node.js 事件循环
 url: /wwh-node-loop
+excerpt: 同一段定时器和 Promise 代码，放进浏览器与 Node.js，输出顺序为什么会变？六个阶段轮番接力，真正绕人的地方藏在 `poll` 和微任务的执行时机里。
 ---
 
 ## 前言
