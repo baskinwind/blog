@@ -29,7 +29,7 @@ url: /wwh-js-memory
 
 栈是内存中一块用于存储局部变量和函数参数的线性结构，遵循着先进后出的原则。数据只能顺序的入栈，顺序的出栈。当然，栈只是内存中一片连续区域一种形式化的描述，数据入栈和出栈的操作仅仅是栈指针在内存地址上的上下移动而已。如下图所示（以 `C` 语言为例）：
 
-![变量在栈中存储](https://pic.breeze.red/wwh-hjv-stack.jpg)
+![变量在栈中存储][1]
 
 如图所示，栈指针刚开始指向内存中 `0x001` 的位置，接着 `sum` 函数开始调用，由于声明了两个变量，往栈中存放了两个数值，栈指针也对应开始移动，当 `sum` 函数调用结束时，仅仅是把栈指针往下移动而已，并不是真正的数据弹出，数据还在，只不过下次赋值时会被覆盖。
 
@@ -104,13 +104,13 @@ function test () {
 
 伴随着 `test` 的调用，为了保证变量不被销毁，在堆中先生成一个对象就叫 `Scope` 吧，把变量作为 `Scope` 的属性给存起来。堆中的数据结构大致如下所示：
 
-![使用 Scope 保存变量](https://pic.breeze.red/wwh-hjv-heap.jpg)
+![使用 Scope 保存变量][2]
 
 那么，这样就能解决闭包的问题了吗？
 
 当然可以，由于 `Scope` 对象存储在堆中，因此返回的 `log` 函数完全可以访问这个 `Scope` 对象。下图是该段代码在 `Chrome` 中的执行效果：
 
-![Chrome 中 Scope 的表示](https://pic.breeze.red/wwh-hjv-chrome-scope.jpg)
+![Chrome 中 Scope 的表示][3]
 
 红框部分与上述一致，同时也反映出之前提及的问题：例子中 `JavaScript` 的变量并没有存在栈中，而是在堆里，用一个特殊的对象（`Scope`）保存。
 
@@ -201,7 +201,7 @@ console.dir(() => {})
 
 复制到 `Chrome` 有以下结果：
 
-![let/const 全局变量](https://pic.breeze.red/wwh-hjv-chrome-global-let.jpg)
+![let/const 全局变量][4]
 
 ## 两种方式
 
@@ -223,7 +223,7 @@ console.dir(() => {})
 
 那么你一定想问，`Chrome` 的 `V8` 能否判断出，从结果看应该是可以的。
 
-![Chrome 下的局部变量](https://pic.breeze.red/wwh-hjv-chrome.jpg)
+![Chrome 下的局部变量][5]
 
 红框内仅有变量 `a`，而变量 `b` 已经消失不见了。由于 `Firefox` 打印不出 `[[Scopes]]` 属性，因此，笔者判断不出。当然，如果有大佬能深入了解并补充的话，感激不尽。
 
@@ -233,7 +233,7 @@ console.dir(() => {})
 
 其实不论变量是存在栈内，还是存在堆里（反正都是在内存里），其结构和存值方式是差不多的，都有如下的结构：
 
-![变量存储](https://pic.breeze.red/wwh-hjv-shape.jpg)
+![变量存储][6]
 
 那好现在我们来看看赋值，根据 `=` 号右边变量的类型分为两种方式：
 
@@ -249,7 +249,7 @@ let foo = 1;
 
 `JavaScript` 声明了一个变量 `foo`，且让它的值为 `1`，内存中就会发生如下变化
 
-![常量储存](https://pic.breeze.red/wwh-hjv-foo.jpg)
+![常量储存][7]
 
 如果现在又声明了一个 `bar` 变量：
 
@@ -259,7 +259,7 @@ let bar = 2;
 
 那么内存中就会变成这样：
 
-![foo & bar](https://pic.breeze.red/wwh-hjv-foo-bar.jpg)
+![foo & bar][8]
 
 现在回顾下刚刚的问题：对象类型算常量吗？
 
@@ -274,7 +274,7 @@ let obj = {
 
 内存模型如下：
 
-![JavaScript Object 存储](https://pic.breeze.red/wwh-hjv-object.jpg)
+![JavaScript Object 存储][9]
 
 通过该图，我们就可以知道，其实 `obj` 指向的内存地址保存的也是一个地址值，那好，如果我们让 `obj.foo = 'foo'` 其实修改的是 `0x1021` 所在的内存区域，但 `obj` 指向的内存地址不会发生改变，因此，对象是常量！
 
@@ -288,7 +288,7 @@ let obj = {
 let x = foo;
 ```
 
-![x 赋值为 foo 变量](https://pic.breeze.red/wwh-hjv-x.jpg)
+![x 赋值为 foo 变量][10]
 
 如上图所示，仅仅是将 `x` 引用到与 `foo` 一样的地址值而已，并不会使用新的内存空间。
 
@@ -304,7 +304,7 @@ let x = foo;
 foo = 'foo';
 ```
 
-![foo 变量修改为另一常量](https://pic.breeze.red/wwh-hjv-foo-change.jpg)
+![foo 变量修改为另一常量][11]
 
 如上图所示，内存中保存了 `'foo'` 并将 `foo` 的引用地址修改为 `0x0204`。
 
@@ -314,7 +314,7 @@ foo = 'foo';
 foo = bar;
 ```
 
-![foo 变量修改为另一变量](https://pic.breeze.red/wwh-hjv-foo-change2.jpg)
+![foo 变量修改为另一变量][12]
 
 如上图所示，仅仅是将 `foo` 引用的地址修改了而已。
 
@@ -331,7 +331,7 @@ const foo = 'foo';
 foo = 'bar'; // Error
 ```
 
-![const 不允许重新赋值](https://pic.breeze.red/wwh-hjv-const-error.png)
+![const 不允许重新赋值][13]
 
 如上图的关系图所示，`foo` 不能引用到别的地址值。
 
@@ -347,7 +347,7 @@ obj.foo = 2;
 
 其 `obj` 所引用的地址并没有发生变化，发生变的部分为另一区域。如下图所示
 
-![const 对象类型修改](https://pic.breeze.red/wwh-hjv-const-object.jpg)
+![const 对象类型修改][14]
 
 ## 对象的修改
 
@@ -377,7 +377,7 @@ console.log(obj1.foo === 'foofoo');
 
 我们不讨论结果，先看看内存中的结构。
 
-![js 中对象存储](https://pic.breeze.red/wwh-hjv-object-save.jpg)
+![js 中对象存储][15]
 
 所以你现在知道答案了吗？
 
@@ -398,3 +398,19 @@ console.log(obj1.foo === 'foofoo');
 - [StackOverflow - garbage-collection-with-node-js](https://stackoverflow.com/questions/5326300/garbage-collection-with-node-js/5328761#5328761)
 - [StackOverflow - How variables are allocated memory in Javascript?](https://stackoverflow.com/questions/2800463/how-variables-are-allocated-memory-in-javascript)
 - [百度百科 - 栈](https://baike.baidu.com/item/%E6%A0%88/12808149?fr=aladdin)
+
+[1]: https://pic.breeze.red/post/wwh-hjv-stack.jpg
+[2]: https://pic.breeze.red/post/wwh-hjv-heap.jpg
+[3]: https://pic.breeze.red/post/wwh-hjv-chrome-scope.jpg
+[4]: https://pic.breeze.red/post/wwh-hjv-chrome-global-let.jpg
+[5]: https://pic.breeze.red/post/wwh-hjv-chrome.jpg
+[6]: https://pic.breeze.red/post/wwh-hjv-shape.jpg
+[7]: https://pic.breeze.red/post/wwh-hjv-foo.jpg
+[8]: https://pic.breeze.red/post/wwh-hjv-foo-bar.jpg
+[9]: https://pic.breeze.red/post/wwh-hjv-object.jpg
+[10]: https://pic.breeze.red/post/wwh-hjv-x.jpg
+[11]: https://pic.breeze.red/post/wwh-hjv-foo-change.jpg
+[12]: https://pic.breeze.red/post/wwh-hjv-foo-change2.jpg
+[13]: https://pic.breeze.red/post/wwh-hjv-const-error.png
+[14]: https://pic.breeze.red/post/wwh-hjv-const-object.jpg
+[15]: https://pic.breeze.red/post/wwh-hjv-object-save.jpg

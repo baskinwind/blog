@@ -48,7 +48,7 @@ url: /wwh-html
 
 ## 语法 or 结构
 
-![HTML 标签结构](https://blogcdn.acohome.cn/wwh-wh-html-element.png-watermark)
+![HTML 标签结构][9]
 
 这是 `HTML` 中的一个 `p` 标签。在 `HTML` 中，大部分元素都有着同样的结构：
 
@@ -361,3 +361,5 @@ OK，总结一下就两点：
 [6]: https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 [7]: https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS
 [8]: https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript
+
+[9]: https://blogcdn.acohome.cn/wwh-wh-html-element.png-watermark

@@ -46,7 +46,7 @@ let obj3 = new A('bar');
 
 以上代码最终都产生了 `{ foo: 'bar' }` 这个对象。对象下有一个叫 `foo` 的属性，它的值为 `bar`。那么，它在堆中是如何存储的呢？
 
-![JavaScript 下对象的存储](https://pic.breeze.red/wwh-wop-object123.jpg)
+![JavaScript 下对象的存储][2]
 
 看过 [JS 变量存储？栈 & 堆？NONONO！][1]，相信大家对上图应该不陌生。
 
@@ -66,11 +66,11 @@ let complexObj = {
 
 在内存中的模型如下：
 
-![复杂对象模型](https://pic.breeze.red/wwh-wop-complex-obj.jpg)
+![复杂对象模型][3]
 
 我们模拟一下 `complexObj.obj.foo` 这个取值过程。
 
-![复杂对象取值过程](https://pic.breeze.red/wwh-wop-complex-obj-get-value.jpg)
+![复杂对象取值过程][4]
 
 取值过程：碰到存储的值是地址值时，就到相应的地址继续进行操作。
 
@@ -134,7 +134,7 @@ getValue(obj, 'foo')
 
 以下为图示过程：
 
-![获取原型上的属性](https://pic.breeze.red/wwh-wop-obj-proto-get-value.jpg)
+![获取原型上的属性][5]
 
 根据上图（或伪代码），我们可以得知最终结果是：`bar`。
 
@@ -257,7 +257,7 @@ class A {
 console.dir(A);
 ```
 
-![class 的 prototype](https://pic.breeze.red/wwh-wop-class-prototype.jpg)
+![class 的 prototype][6]
 
 如上图所示，`A` 仍有 `prototype` 属性，并且定义中除了 `constructor` 函数，其他的函数都在 `prototype` 属性内。
 
@@ -301,7 +301,7 @@ let obj = new A();
 
 放到 `Chrome` 下一看便知：
 
-![function 的 prototype](https://pic.breeze.red/wwh-wop-function-prototype.jpg)
+![function 的 prototype][7]
 
 由上图可见，它是一个简单的对象，最原始的 `prototype` 中仅仅包含了 `constructor` 和 `__proto__`。
 
@@ -334,3 +334,10 @@ A.prototype.__proto__ === Object.prototype; // true
 最后，大部分文章提到原型（链）时，都会提到继承。`emmmm`，先放过继承吧。继承只是编程的一种方式，不是原理性的东西，下次讲吧~~
 
 [1]: /wwh-js-memory
+
+[2]: https://pic.breeze.red/post/wwh-wop-object123.jpg
+[3]: https://pic.breeze.red/post/wwh-wop-complex-obj.jpg
+[4]: https://pic.breeze.red/post/wwh-wop-complex-obj-get-value.jpg
+[5]: https://pic.breeze.red/post/wwh-wop-obj-proto-get-value.jpg
+[6]: https://pic.breeze.red/post/wwh-wop-class-prototype.jpg
+[7]: https://pic.breeze.red/post/wwh-wop-function-prototype.jpg

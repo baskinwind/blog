@@ -29,7 +29,7 @@ p {
 
 层叠，字面意思就是层层叠加。我们知道，`HTML` 的页面结构是树状的，不同标签的层级嵌套最终组合形成了页面。那么从另一个角度来看，页面的结构就是一层一层的，如下图所示：
 
-![HTML 结构示意图](https://blogcdn.acohome.cn/wwh-wc-html-tree.gif-watermark)
+![HTML 结构示意图][1]
 
 `html` 为最底层，`body` 位于 `html` 层之上；`header`、`nav`、`article`、`aside`、`footer` 这些标签位于 `body` 之上，`section` 位于 `article` 之上。标签的堆叠就形成了网页结构，那么这关 `CSS` 什么事？
 
@@ -462,3 +462,5 @@ function Test() {
 - [MDN - CSS 参考](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference)
 - [CSS 所有属性分类](https://blog.csdn.net/qq_16546829/article/details/81979142)
 - [CSS 的优先级和权重](https://www.cnblogs.com/cnblogs-jcy/p/8574177.html)
+
+[1]: https://blogcdn.acohome.cn/wwh-wc-html-tree.gif-watermark

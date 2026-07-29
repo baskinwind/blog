@@ -141,15 +141,15 @@ window.addEventListener('pointermove', event => {
 - [详解渲染进程](https://breeze.vin/inside-browser-part3/)
 - [事件合成器](https://breeze.vin/inside-browser-part4/)
 
-[1]: https://pic.breeze.red/t-chrome-blog-input4.png
-[2]: https://pic.breeze.red/t-chrome-blog-nfsr1.png
-[3]: https://pic.breeze.red/t-chrome-blog-nfsr2.png
-[4]: https://pic.breeze.red/t-chrome-blog-scroll.png
+[1]: https://pic.breeze.red/post/t-chrome-blog-input4.png
+[2]: https://pic.breeze.red/post/t-chrome-blog-nfsr1.png
+[3]: https://pic.breeze.red/post/t-chrome-blog-nfsr2.png
+[4]: https://pic.breeze.red/post/t-chrome-blog-scroll.png
 [5]: https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener
-[6]: https://pic.breeze.red/t-chrome-blog-hittest.png
-[7]: https://pic.breeze.red/t-chrome-blog-rawevents.png
-[8]: https://pic.breeze.red/t-chrome-blog-coalescedevents.png
-[9]: https://pic.breeze.red/t-chrome-blog-getCoalescedEvents.png
+[6]: https://pic.breeze.red/post/t-chrome-blog-hittest.png
+[7]: https://pic.breeze.red/post/t-chrome-blog-rawevents.png
+[8]: https://pic.breeze.red/post/t-chrome-blog-coalescedevents.png
+[9]: https://pic.breeze.red/post/t-chrome-blog-getCoalescedEvents.png
 [10]: https://developers.google.com/web/tools/lighthouse/
 [11]: https://developers.google.com/web/tools/chrome-devtools/speed/get-started
 [12]: https://developers.google.com/web/updates/2018/06/feature-policy

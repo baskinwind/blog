@@ -15,7 +15,7 @@ url: /wwh-css-flex
 
 在深入了解前，先来看看浏览器的支持情况吧：
 
-![flex 支持情况](https://pic.breeze.red/wwh-hf-support.png)
+![flex 支持情况][1]
 
 一片绿色，那还等什么呢？赶紧掌握呀~
 
@@ -45,7 +45,7 @@ url: /wwh-css-flex
 
 离开了 `DOM` 谈 `CSS`，那就是瞎扯。那么，假设有这样一个 `DOM` 结构：
 
-![flex 元素呈现](https://pic.breeze.red/wwh-hf-dom.png)
+![flex 元素呈现][2]
 
 使用 `Flex` 必须要有一个容器，在上面的结构中，黑色线框为容器，浅色内容为容器内容。假设黑色线框内为 `div.parent`，浅色内容为 `div.child`。当我们为容器设置以下样式时：
 
@@ -57,7 +57,7 @@ url: /wwh-css-flex
 
 神奇的事情发生了，它变成了这样：
 
-![flex 各项定义](https://pic.breeze.red/wwh-hf-flex.png)
+![flex 各项定义][3]
 
 先来解释一下图上关键字所代表的内容：
 
@@ -100,7 +100,7 @@ url: /wwh-css-flex
 }
 ```
 
-![不同 direction 的效果](https://pic.breeze.red/wwh-hf-direction.png)
+![不同 direction 的效果][4]
 
 #### flex-wrap
 
@@ -129,7 +129,7 @@ url: /wwh-css-flex
 
 图示：
 
-![不同 wrap 的效果](https://pic.breeze.red/wwh-hf-wrap.png)
+![不同 wrap 的效果][5]
 
 对于 `wrap-reverse` 的表现可以这么理解：
 
@@ -159,7 +159,7 @@ url: /wwh-css-flex
 
 结合之前的图片，我们来分析一下：
 
-![flex 各项定义](https://pic.breeze.red/wwh-hf-flex.png)
+![flex 各项定义][3]
 
 解释这些属性的具体含义前，我们需要确定主轴以及交叉轴的方向，经过上面的介绍相信大家也应该了解这图对应的 `flex-flow` 为 `row nowrap`，其他的 `flex-flow` 对应其他的图，这点需要清楚。
 
@@ -174,7 +174,7 @@ url: /wwh-css-flex
 
 有点绕口，看图就能理解了。箭头上的数字代表该容器内各段空间的比例。
 
-![不同 justify-content 的效果](https://pic.breeze.red/wwh-hf-justify-content.png)
+![不同 justify-content 的效果][6]
 
 #### align-content
 
@@ -201,7 +201,7 @@ url: /wwh-css-flex
 
 字面意思不容易理解，对比图中效果就 `OK` 了。箭头上的数字同样表示比例，红色线框表示容器行在容器中的位置。
 
-![不同 align-content 的效果](https://pic.breeze.red/wwh-hf-align-content.png)
+![不同 align-content 的效果][7]
 
 介绍该属性时说过，该属性定义容器行的呈现效果，那么该属性在 `flex-wrap` 为 `nowrap` 时，有用吗？
 
@@ -238,7 +238,7 @@ url: /wwh-css-flex
 
 图示：因为该属性的表现仅与容器行相关，这里以单行容器作为示例。为了展示 `baseline`、`stretch` 的效果，例子用 `line-height`、`padding-top` 撑起内容高度。
 
-![不同 align-items 的效果](https://pic.breeze.red/wwh-hf-align-items.png)
+![不同 align-items 的效果][8]
 
 1. 图中红线为每块内容基线对齐后的位置，对齐后由基线上最高的元素顶离容器行的交叉轴起点。
 2. 图中最后容器中第二块内容高度超出了容器高度，那么容器行高度就为最高的内容的高度。
@@ -262,7 +262,7 @@ url: /wwh-css-flex
 
 图示：元素内的数字为该元素的 `order`。
 
-![order 从小到大排列](https://pic.breeze.red/wwh-hf-order.png)
+![order 从小到大排列][9]
 
 #### flex-basis
 
@@ -360,7 +360,7 @@ url: /wwh-css-flex
 
 图示：在每一个容器的第二个内容块上设置了 `align-self: flex-start`
 
-![不同 align-self 的效果](https://pic.breeze.red/wwh-hf-align-self.png)
+![不同 align-self 的效果][10]
 
 `OK`，到此为止，与 `Flex` 相关的 `12` 个属性已经解释完毕。作为一种布局方式，相信它在 `HTML` 中的使用还是很多的，因此再说说应用吧。
 
@@ -508,3 +508,14 @@ url: /wwh-css-flex
 ## 参考
 
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/#propdef-justify-content)
+
+[1]: https://pic.breeze.red/post/wwh-hf-support.png
+[2]: https://pic.breeze.red/post/wwh-hf-dom.png
+[3]: https://pic.breeze.red/post/wwh-hf-flex.png
+[4]: https://pic.breeze.red/post/wwh-hf-direction.png
+[5]: https://pic.breeze.red/post/wwh-hf-wrap.png
+[6]: https://pic.breeze.red/post/wwh-hf-justify-content.png
+[7]: https://pic.breeze.red/post/wwh-hf-align-content.png
+[8]: https://pic.breeze.red/post/wwh-hf-align-items.png
+[9]: https://pic.breeze.red/post/wwh-hf-order.png
+[10]: https://pic.breeze.red/post/wwh-hf-align-self.png

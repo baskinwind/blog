@@ -96,7 +96,7 @@ hm.baidu.com            | 4
 
 “首先，你按顺序把多个请求连续交给我，不必等前一个响应回来。服务端收到后，也必须按请求顺序返回响应。” 说着，`TCP` 拿起纸笔画了起来。
 
-![三种实现请求的方式对比](https://pic.breeze.red/bf-http-keep-alive-pipelining.jpg)
+![三种实现请求的方式对比][1]
 
 “你看哈，最左边是现有的方式，中间是加了 `keep-alive` 的实现，右边呢是我刚提到的想法，我把最后这种实现叫做管道化，你看看。”
 
@@ -169,3 +169,5 @@ hm.baidu.com            | 4
 “...”
 
 “算了，关了吧。”
+
+[1]: https://pic.breeze.red/post/bf-http-keep-alive-pipelining.jpg

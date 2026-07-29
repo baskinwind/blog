@@ -109,7 +109,7 @@ url: /what-is-http
 
 大概就长这样吧。
 
-![请求报文](https://pic.breeze.red/bf-http-request.jpg)
+![请求报文][1]
 
 ### 响应
 
@@ -121,7 +121,7 @@ url: /what-is-http
 
 大概就长这样吧。
 
-![响应报文](https://pic.breeze.red/bf-http-response.jpg)
+![响应报文][2]
 
 ### 请求方式
 
@@ -159,3 +159,6 @@ url: /what-is-http
 “room 屠宰场。” 声音再次出现：“我是要成为海贼王的男人。”
 
 “见鬼了？” 我有点慌张，“这声音好像来自屏幕外？奇怪。”
+
+[1]: https://pic.breeze.red/post/bf-http-request.jpg
+[2]: https://pic.breeze.red/post/bf-http-response.jpg

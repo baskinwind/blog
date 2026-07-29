@@ -218,10 +218,13 @@ url: /what-is-cache
 
 指令可以组合使用，附上组合使用结构图：
 
-![Cache-Control 使用规则](https://pic.breeze.red/bf-cache-control.jpg)
+![Cache-Control 使用规则][1]
 
 该图可作为开发者文档。
 
 下图为我们这边总结的缓存命中规则，供你们参考：
 
-![命中缓存规则](https://pic.breeze.red/bf-hit-cache.jpg)
+![命中缓存规则][2]
+
+[1]: https://pic.breeze.red/post/bf-cache-control.jpg
+[2]: https://pic.breeze.red/post/bf-hit-cache.jpg

@@ -78,7 +78,7 @@ image.onerror = () => {
 
 ### 图解
 
-![浏览器下的 Event Loop](https://pic.breeze.red/wwh-wbe-eventloop.png)
+![浏览器下的 Event Loop][4]
 
 - `heap`：回调函数保存处（堆）。
 - `stack`：可以认为是主线程执行的地方（栈）。
@@ -109,7 +109,7 @@ image.onerror = () => {
 
 ### 图解
 
-![微任务与宏任务](https://pic.breeze.red/wwh-wbe-ma%28i%29crotask.png)
+![微任务与宏任务][5]
 
 能产生微任务的方式：
 
@@ -134,3 +134,6 @@ image.onerror = () => {
 [1]: https://www.w3.org/TR/html5/webappapis.html#event-loops
 [2]: https://www.ruanyifeng.com/blog/2014/10/event-loop.html
 [3]: https://lynnelv.github.io/js-event-loop-browser
+
+[4]: https://pic.breeze.red/post/wwh-wbe-eventloop.png
+[5]: https://pic.breeze.red/post/wwh-wbe-ma%28i%29crotask.png

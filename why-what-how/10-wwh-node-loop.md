@@ -105,7 +105,7 @@ url: /wwh-node-loop
 
 ### 图解
 
-![node 微任务 & 宏任务](https://pic.breeze.red/wwh-wne-ma%28i%29crotask-in-node.png)
+![node 微任务 & 宏任务][4]
 
 ## 对比浏览器
 
@@ -149,11 +149,11 @@ promise2
 
 浏览器下的任务执行过程：
 
-![浏览器任务执行顺序](https://pic.breeze.red/wwh-wne-browser-excute-animate.gif)
+![浏览器任务执行顺序][5]
 
 `Node.js` 下的任务执行过程：
 
-![Node 任务执行顺序](https://pic.breeze.red/wwh-wne-node-excute-animate.gif)
+![Node 任务执行顺序][6]
 
 ## 总结
 
@@ -163,7 +163,7 @@ promise2
 
 最后，根据前面的内容，得出 `Node.js` 下 `Event Loop` 的执行过程如下：
 
-![Node 下 Event Loop](https://pic.breeze.red/wwh-wne-node-event-loop.png)
+![Node 下 Event Loop][7]
 
 - 橙色为 `Event Loop` 的主要内容。
 - 蓝色为同一个微任务队列。
@@ -178,3 +178,8 @@ promise2
 [1]: /wwh-browser-loop
 [2]: https://nodejs.org/learn/asynchronous-work/event-loop-timers-and-nexttick
 [3]: https://lynnelv.github.io/js-event-loop-nodejs
+
+[4]: https://pic.breeze.red/post/wwh-wne-ma%28i%29crotask-in-node.png
+[5]: https://pic.breeze.red/post/wwh-wne-browser-excute-animate.gif
+[6]: https://pic.breeze.red/post/wwh-wne-node-excute-animate.gif
+[7]: https://pic.breeze.red/post/wwh-wne-node-event-loop.png
