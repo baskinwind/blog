@@ -137,4 +137,4 @@ image.onerror = () => {
 [3]: https://lynnelv.github.io/js-event-loop-browser
 
 [4]: https://pic.breeze.red/post/wwh-wbe-eventloop.png
-[5]: https://pic.breeze.red/post/wwh-wbe-ma%28i%29crotask.png
+[5]: https://pic.breeze.red/post/wwh-wbe-microtask.png
