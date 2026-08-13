@@ -1,6 +1,6 @@
 # What in Browser：角色档案
 
-本文档根据现有 20 篇文章整理，用于保持后续故事的角色职责、性格、道具和关系一致。
+本文档根据现有 21 篇文章整理，用于保持后续故事的角色职责、性格、道具和关系一致。
 
 角色分为三类：
 
@@ -154,6 +154,7 @@
 | `null1`、`null2` | 自立暗号阵营，不愿被数字和字符串排斥 | [《闹心的变量》](/js-variable2) |
 | `obj` | 懂 `valueOf()`、`toString()` 和原始值转换，经常反过来提醒 JavaScript 老大按规范工作 | [《闹心的变量》](/js-variable2) |
 | `addPlate` | 没有终止条件，只会不断喊“再加一只”的递归函数 | [《JavaScript 老大的叠盘子游戏》](/js-call-stack) |
+| `click` 事件记录单 | 沿预先确定的传播路径经过各节点，携带 `target`、`currentTarget`、`bubbles` 和 `cancelable` 等信息 | [《到底是谁点了按钮？》](/dom-event) |
 
 ### 解析与脚本角色
 
